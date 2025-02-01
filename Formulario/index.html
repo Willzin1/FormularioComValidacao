@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício | Validar formulário</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá conter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="" method="POST" class="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="nome validar">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" class="sobrenome validar">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" class="cpf validar">
+
+            <label for="usuario">Usuário:</label>
+            <input type="text" name="usuario" id="usuario" class="usuario validar">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" class="senha validar">
+
+            <label for="senhaRepetida">Confirmar senha:</label>
+            <input type="password" name="senhaRepetida" id="senhaRepetida" class="senhaRepetida validar">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="./Assets/Javascript/script.js"></script>
+    <script src="./Assets/Javascript/validadorDeCpf.js"></script>
+</body>
+</html>
